@@ -1,7 +1,12 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 // Playlist.js
-import React from 'react';
+import PropTypes from 'prop-types';
+
+// inside the Playlist component
+Playlist.propTypes = {
+  playlistTracks: PropTypes.array.isRequired,
+  onRemoveTrack: PropTypes.func.isRequired,
+  onSave: PropTypes.func.isRequired
+};
 import TrackList from './TrackList';
 
 const Playlist = ({ playlistTracks, onRemoveTrack, onSave }) => {

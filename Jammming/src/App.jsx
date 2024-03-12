@@ -1,11 +1,10 @@
-/* eslint-disable no-unused-vars */
 // App.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import SearchBar from './SearchBar';
 import SearchResults from './PlayList';
 import Playlist from './PlayList';
-
+// App.js
 const App = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [playlistTracks, setPlaylistTracks] = useState([]);
